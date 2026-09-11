@@ -1,0 +1,44 @@
+{
+    "name": "aprendendo-mocks",
+    "version": "1.0.0",
+    "description": "Projeto template padrão didático de testes automatizados com Jest e JavaScript.",
+    "private": true,
+    "scripts": {
+        "test": "cls && node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --verbose",
+        "report": "npm test -- --coverage --json --outputFile=coverage/relatorio.json",
+        "html": "npm test -- --config jest.reporters.config.mjs"
+    },
+    "keywords": [
+        "javascript",
+        "jest",
+        "testes",
+        "testes-automatizados",
+        "testing",
+        "nodejs",
+        "ecmascript-modules",
+        "codeverse"
+    ],
+    "homepage": "https://codeverse.dev.br/",
+    "author": {
+        "name": "Marcello",
+        "url": "https://github.com/mapcarboni/"
+    },
+    "contributors": [
+        {
+            "name": "Thiago",
+            "url": "https://github.com/thiago-rferreira/"
+        }
+    ],
+    "license": "MIT",
+    "type": "module",
+    "engines": {
+        "node": ">=18"
+    },
+    "devDependencies": {
+        "jest": "^30.5.1",
+        "jest-html-reporters": "^3.1.7"
+    },
+    "dependencies": {
+        "axios": "^1.20.0"
+    }
+}
